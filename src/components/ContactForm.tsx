@@ -6,6 +6,7 @@ import { Textarea } from "./ui/textarea";
 import { Card, CardContent, CardHeader } from "./ui/card";
 import { ArrowLeft, Mail, Send, User } from "lucide-react";
 import { toast } from "sonner@2.0.3";
+import emailjs from "@emailjs/browser";
 
 interface ContactFormProps {
   onBack: () => void;
@@ -34,6 +35,7 @@ export function ContactForm({ onBack, hideBackButton = false }: ContactFormProps
     }));
   };
 
+  // --- UPDATED handleSubmit with EmailJS ---
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     
@@ -43,34 +45,34 @@ export function ContactForm({ onBack, hideBackButton = false }: ContactFormProps
     }
 
     setIsSubmitting(true);
-    
+
     try {
-      // Simulate sending email to Atlanta Wild management
-      // In a real application, this would connect to your backend/email service
-      await new Promise(resolve => setTimeout(resolve, 2000));
-      
-      console.log("Sending email to mia@atlantawild.com:", formData);
-      
+      const templateParams = {
+        fullName: formData.fullName,
+        email: formData.email,
+        question: formData.question,
+      };
+
+      await emailjs.send(
+        "YOUR_SERVICE_ID",   // replace with your EmailJS Service ID
+        "YOUR_TEMPLATE_ID",  // replace with your EmailJS Template ID
+        templateParams,
+        "YOUR_PUBLIC_KEY"    // replace with your EmailJS Public Key
+      );
+
       toast.success("Your message has been sent to Atlanta Wild management!");
       
-      // Reset form
-      setFormData({
-        fullName: "",
-        email: "",
-        question: ""
-      });
-      
-      // Go back to homepage after successful submission
-      setTimeout(() => {
-        onBack();
-      }, 1500);
-      
+      setFormData({ fullName: "", email: "", question: "" });
+      setTimeout(() => onBack(), 1500);
+
     } catch (error) {
+      console.error(error);
       toast.error("Failed to send message. Please try again.");
     } finally {
       setIsSubmitting(false);
     }
   };
+  // ---------------------------------------------
 
   return (
     <div className="py-12 px-6 md:px-12 lg:px-20">

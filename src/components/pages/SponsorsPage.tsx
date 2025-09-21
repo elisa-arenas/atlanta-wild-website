@@ -22,20 +22,6 @@ export function SponsorsPage() {
       category: "Official Banking Partner",
       description: "Supporting Atlanta's finest athletes with comprehensive financial services.",
       website: "https://metroatlantabank.com"
-    },
-    {
-      id: 4,
-      name: "Wild Gear Apparel",
-      category: "Official Merchandise Partner",
-      description: "Authentic Atlanta Wild merchandise and fan gear.",
-      website: "https://wildgear.com"
-    },
-    {
-      id: 5,
-      name: "Champion Training Center",
-      category: "Official Training Facility",
-      description: "State-of-the-art training facilities for professional athletes.",
-      website: "https://championtraining.com"
     }
   ];
 
@@ -89,7 +75,7 @@ export function SponsorsPage() {
           {/* Partnership Benefits */}
           <div className="bg-gradient-to-r from-[#C8102E] to-black rounded-lg p-8 mt-16">
             <div className="text-center">
-              <h2 className="text-3xl font-bold text-white mb-6">Become a Partner</h2>
+              <h2 className="text-3xl font-bold text-white mb-6">Become a Sponsor</h2>
               <p className="text-white/90 text-lg mb-8 max-w-3xl mx-auto">
                 Join the Atlanta Wild family and support championship-level athletes while growing your brand 
                 visibility in the United Grid League community.
@@ -109,7 +95,7 @@ export function SponsorsPage() {
                 </div>
               </div>
               <button className="bg-white text-[#C8102E] px-8 py-3 rounded font-bold hover:bg-gray-100 transition-colors duration-200">
-                Contact Partnership Team
+                Contact Sponsorship Manager
               </button>
             </div>
           </div>

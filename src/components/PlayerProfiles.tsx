@@ -7,7 +7,7 @@ const playersData = [
     id: 1,
     name: "Marcus Johnson",
     role: "Team Captain & Utility Player",
-    image: "public/teamImages/photo1.JPG",
+    image: "/teamImages/photo1.JPG",
     stats: "3,240 passing yards • 28 TDs • 92.5% completion rate",
     experience: "8 years pro"
   },
@@ -15,7 +15,7 @@ const playersData = [
     id: 2,
     name: "Antonio Rodriguez",
     role: "Star Running Back",
-    image: "public/teamImages/photo2.JPG",
+    image: "/teamImages/photo2.JPG",
     stats: "1,890 rushing yards • 15 TDs • 5.2 avg yards",
     experience: "5 years pro"
   },
@@ -23,7 +23,7 @@ const playersData = [
     id: 3,
     name: "James Washington",
     role: "Defensive End",
-    image: "public/teamImages/photo3.JPG",
+    image: "/teamImages/photo3.JPG",
     stats: "12.5 sacks • 45 tackles • 3 forced fumbles",
     experience: "6 years pro"
   },
@@ -31,7 +31,7 @@ const playersData = [
     id: 4,
     name: "Jon",
     role: "Wide Receiver",
-    image: "public/teamImages/photo1.JPG",
+    image: "/teamImages/photo1.JPG",
     stats: "89 receptions • 1,340 yards • 11 TDs",
     experience: "4 years pro"
   }

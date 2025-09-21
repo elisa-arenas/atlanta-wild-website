@@ -4,39 +4,31 @@ import { ImageWithFallback } from "./figma/ImageWithFallback";
 const socialPosts = [
   {
     id: 1,
-    url:"https://www.instagram.com/unitedgridleague/reel/DCR5pB6uLuY/",
+    url: "https://www.instagram.com/unitedgridleague/reel/DCR5pB6uLuY/",
     platform: "instagram",
-    caption: "Championship celebration! 🏆 #AtlantaWild #Champions"
+    caption: "Championship celebration! 🏆 #AtlantaWild #Champions",
+    thumbnail: "/instagramThumbnails/instaReel1Thumbail.png"
   },
   {
     id: 2,
-    image: "https://images.unsplash.com/photo-1715270525118-ce589797568b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHhmb290YmFsbCUyMHBsYXllciUyMHJ1bm5pbmd8ZW58MXx8fHwxNzU1NDc0MDc5fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+    url: "https://www.instagram.com/atlantawild/reel/DAs-QtvOTO6/",
     platform: "instagram",
-    caption: "Game day ready 💪 #WildSide #GameTime"
+    caption: "Game day ready 💪❤️ #WildSide #GameTime",
+    thumbnail: "/instagramThumbnails/reel2.png"
   },
   {
     id: 3,
-    image: "https://images.unsplash.com/photo-1551390415-0de411440ca3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxzcG9ydHMlMjB0ZWFtJTIwY2VsZWJyYXRpb258ZW58MXx8fHwxNzU1NDc0MDc5fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+    url: "https://www.instagram.com/unitedgridleague/reel/DOZZZtIEpTH/",
     platform: "instagram",
-    caption: "Team bonding session 🤝 #TeamWork #WildFamily"
+    caption: "Team bonding session 🤝❤️ #TeamWork #WildFamily",
+    thumbnail: "/instagramThumbnails/reel3.png"
   },
   {
     id: 4,
-    image: "https://images.unsplash.com/photo-1547534171-243ab161cd20?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHhiYXNrZXRiYWxsJTIwcGxheWVyJTIwYWN0aW9ufGVufDF8fHx8MTc1NTQzMTk2OXww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+    url: "https://www.instagram.com/unitedgridleague/reel/DOWN9s6jVNC/",
     platform: "instagram",
-    caption: "Training hard for the next game 🔥 #NeverSettle"
-  },
-  {
-    id: 5,
-    image: "https://images.unsplash.com/photo-1619030945899-c4307ae42479?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHhiYXNlYmFsbCUyMHBsYXllciUyMHBvcnRyYWl0fGVufDF8fHx8MTc1NTQ1OTI0OXww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
-    platform: "instagram",
-    caption: "Captain's focus 🎯 #Leadership #AtlantaWild"
-  },
-  {
-    id: 6,
-    image: "https://images.unsplash.com/photo-1739301679780-fe9f807fd499?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxhdGhsZXRpYyUyMHN0YWRpdW0lMjBjcm93ZHxlbnwxfHx8fDE3NTU0NzQwNzl8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
-    platform: "instagram",
-    caption: "Our amazing fans! ❤️ #WildFans #HomeAdvantage"
+    caption: "Training hard for the next game 🔥🎯 #NeverSettle",
+    thumbnail: "/instagramThumbnails/reel4.png"
   }
 ];
 
@@ -45,26 +37,28 @@ export function SocialMediaGallery() {
     <section className="py-20 px-6 md:px-12 lg:px-20">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl lg:text-6xl mb-6 font-black uppercase tracking-wider text-white" style={{ fontFamily: 'Arial Black, sans-serif' }}>
+          <h2
+            className="text-4xl md:text-5xl lg:text-6xl mb-6 font-black uppercase tracking-wider text-white"
+            style={{ fontFamily: "Arial Black, sans-serif" }}
+          >
             FOLLOW THE <span className="text-white">WILD SIDE</span>
           </h2>
           <p className="text-xl text-white/90 max-w-3xl mx-auto">
-            Stay connected with Atlanta Wild across all social platforms. 
-            Get behind-the-scenes content, game highlights, and exclusive team updates.
+            Stay connected with Atlanta Wild across all social platforms. Get behind-the-scenes content, game highlights, and exclusive team updates.
           </p>
-          
+
           <div className="flex justify-center space-x-6 mt-8">
-            <a 
-              href="https://www.instagram.com/atlantawild/" 
+            {/* Buttons for social links */}
+            <a
+              href="https://www.instagram.com/atlantawild/"
               target="_blank"
-              rel="noopener noreferrer" 
+              rel="noopener noreferrer"
               className="flex items-center space-x-2 px-6 py-3 rounded-full text-white transition-transform duration-200 hover:scale-105"
-              style={{ backgroundColor: '#C8102E' }}
+              style={{ backgroundColor: "#C8102E" }}
             >
               <Instagram className="w-5 h-5" />
               <span>@atlantawild</span>
             </a>
-            
             <a 
               href="https://www.tiktok.com/@atlanta.wild" 
               target="_blank"
@@ -80,39 +74,37 @@ export function SocialMediaGallery() {
           </div>
         </div>
 
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
           {socialPosts.map((post) => (
-            <div key={post.id}
-              className="group relative aspect-square overflow-hidden rounded-lg shadow-md hover:shadow-xl transition-all duration-300 flex items-center justify-center bg-gray-800">
-              {/* <a
-                href={post.url}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="group relative aspect-square overflow-hidden rounded-lg shadow-md hover:shadow-xl transition-all duration-300 flex items-center justify-center bg-gray-800"
-              ></a> */}
-              <ImageWithFallback
-                src={post.image}
-                alt="Social media post"
-                className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
-              />
-              
-              {/* Overlay */}
-              <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                <div className="absolute bottom-0 left-0 right-0 p-4">
-                  <div className="flex items-center justify-between mb-2">
-                    <Instagram className="w-4 h-4 text-white" />
-                    <div className="flex space-x-1">
-                      <div className="w-1 h-1 bg-white rounded-full"></div>
-                      <div className="w-1 h-1 bg-white rounded-full"></div>
-                      <div className="w-1 h-1 bg-white rounded-full"></div>
-                    </div>
-                  </div>
-                  <p className="text-white text-xs leading-tight line-clamp-2">
-                    {post.caption}
-                  </p>
-                </div>
+            <a
+              key={post.id}
+              href={post.url}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="block overflow-hidden rounded-lg shadow-md group"
+            >
+              <div
+                className="relative w-full"
+                style={{
+                  // Aspect ratio 9:16 — you can also use Tailwind's aspect-[9/16] if available
+                  paddingTop: `${(16 / 9) * 100}%`,  
+                  // this makes a vertical container
+                }}
+              >
+                <img
+                  src={post.thumbnail}
+                  alt={post.caption}
+                  className="
+                    absolute top-0 left-0 w-full h-full object-cover object-center
+                    transition-transform duration-300
+                    group-hover:scale-205
+                    group-hover:-translate-y-2"
+                />
               </div>
-            </div>
+              <div className="p-4 bg-gray-800">
+                <p className="text-white text-sm">{post.caption}</p>
+              </div>
+            </a>
           ))}
         </div>
       </div>

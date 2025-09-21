@@ -144,26 +144,6 @@ export function NewsPage() {
           </div>
         </div>
       </div>
-
-      {/* Newsletter Signup */}
-      <div className="py-16 bg-gradient-to-r from-[#C8102E] to-black">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl font-bold text-white mb-4">Stay in the Loop</h2>
-          <p className="text-white/90 text-lg mb-8">
-            Get the latest Wild news, exclusive content, and behind-the-scenes updates delivered to your inbox.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 max-w-md mx-auto">
-            <input
-              type="email"
-              placeholder="Enter your email"
-              className="flex-1 px-4 py-3 rounded bg-white/10 text-white placeholder-white/70 border border-white/20 focus:outline-none focus:border-white/50"
-            />
-            <button className="bg-white text-[#C8102E] px-6 py-3 rounded font-semibold hover:bg-gray-100 transition-colors duration-200">
-              Subscribe
-            </button>
-          </div>
-        </div>
-      </div>
     </div>
   );
 }

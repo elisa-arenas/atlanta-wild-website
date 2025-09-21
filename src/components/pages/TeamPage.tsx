@@ -56,45 +56,45 @@ export function TeamPage() {
   const coaches = [
     {
       id: 1,
-      name: "Coach Robert Hibbard",
-      role: "Head Coach",
+      name: "Coach Daniel Jackson",
+      role: "Co-Coach",
       experience: "Former utility player turned head coach.",
-      bio: "US Army Vet, Physical Therapist Assistant"
+      bio: "Coach bio here"
     },
     {
       id: 2,
-      name: "Co-owner Mia Austreng",
-      role: "Co-owner",
-      experience: "Specializes in player development and strategic planning.",
-      bio: "Owner of Compass North Nutrition, Community&Sales Manger of Hairstrong Band."
+      name: "Coach Robert Hibbard",
+      role: "Co-Coach",
+      experience: "Former utility player turned head coach.",
+      bio: "Winner of UPOY and MVP, player of Atlanta Wild and Gainesville Wild"
     },
     {
       id: 3,
+      name: "Co-owner Mia Austreng",
+      role: "Co-owner",
+      experience: "Specializes in player development.",
+      bio: "Owner of Compass North Nutrition, Community&Sales Manger of Hairstrong Band."
+    },
+    {
+      id: 4,
       name: "Co-owner Jonathon Chen",
       role: "Co-owner",
       experience: "6 years coaching experience",
       bio: "Professional Ballroom and Latin Dancer and NASM Certified."
     },
     {
-      id: 4,
+      id: 5,
       name: "Kenniece Wilson-Smith",
       role: "Sponsorship Manager",
       experience: "12 years coaching experience",
       bio: "CEO of TBC Media Group, Chief Brand Officer of Wilson Smith Brand, Founder of Get The Bag Girl."
     },
     {
-      id: 5,
+      id: 6,
       name: "Elisa Arenas",
       role: "Social Media Manager",
       experience: "Atlanta Wild Website Developer",
       bio: "Software Engineer, Freelancer in Photo, Video, and Web Development"
-    },
-    {
-      id: 6,
-      name: "Assistant Coach XXX",
-      role: "Defensive Coordinator",
-      experience: "6 years coaching experience",
-      bio: "Former defensive specialist with expertise in game analytics."
     }
   ];
 
