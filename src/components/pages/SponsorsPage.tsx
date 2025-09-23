@@ -4,23 +4,23 @@ export function SponsorsPage() {
   const sponsors = [
     {
       id: 1,
-      name: "GridTech Sports",
-      category: "Official Equipment Partner",
-      description: "Leading provider of professional grid league equipment and technology.",
-      website: "https://gridtech-sports.com"
+      name: "Enduraphin",
+      category: "Official Beverage Partner",
+      description: "Fueling our athletes with On The Go, Ready-To-Mix Nutrition.",
+      website: "https://enduraphin.com"
     },
     {
       id: 2,
-      name: "Atlanta Energy Drinks",
-      category: "Official Beverage Partner",
-      description: "Fueling champions with premium energy drinks and sports nutrition.",
+      name: "Adidas",
+      category: "Official Equipment Partner",
+      description: "Supporting our champions with premium energy drinks and sports nutrition.",
       website: "https://atlantaenergy.com"
     },
     {
       id: 3,
-      name: "Metro Atlanta Bank",
-      category: "Official Banking Partner",
-      description: "Supporting Atlanta's finest athletes with comprehensive financial services.",
+      name: "Drink Noca",
+      category: "Official Beverage Partner",
+      description: "Supporting Atlanta's finest athletes with non-carbonated boozy beverages.",
       website: "https://metroatlantabank.com"
     }
   ];
@@ -33,7 +33,7 @@ export function SponsorsPage() {
       <div className="bg-gradient-to-r from-black to-[#C8102E] py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-5xl font-bold text-white mb-4">Meet Our Sponsors</h1>
-          <p className="text-xl text-white/90">Proud partners supporting the Atlanta Wild championship journey</p>
+          <p className="text-xl text-white/90">Proud partners supporting the Atlanta Wild championship journey.</p>
         </div>
       </div>
 
@@ -81,22 +81,25 @@ export function SponsorsPage() {
                 visibility in the United Grid League community.
               </p>
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
-                <div className="bg-white/10 rounded-lg p-6">
+                <div className="bg-white/10 rounded-lg p-6 duration-300 hover:scale-105">
                   <h3 className="text-white font-bold text-lg mb-2">Brand Exposure</h3>
                   <p className="text-white/80 text-sm">Reach thousands of passionate fans across the league</p>
                 </div>
-                <div className="bg-white/10 rounded-lg p-6">
+                <div className="bg-white/10 rounded-lg p-6 duration-300 hover:scale-105">
                   <h3 className="text-white font-bold text-lg mb-2">Community Impact</h3>
-                  <p className="text-white/80 text-sm">Support local athletics and community development</p>
+                  <p className="text-white/80 text-sm">Support our athletes and community development</p>
                 </div>
-                <div className="bg-white/10 rounded-lg p-6">
+                <div className="bg-white/10 rounded-lg p-6 duration-300 hover:scale-105">
                   <h3 className="text-white font-bold text-lg mb-2">Exclusive Access</h3>
-                  <p className="text-white/80 text-sm">VIP events and behind-the-scenes experiences</p>
+                  <p className="text-white/80 text-sm">Behind-the-scenes experiences</p>
                 </div>
               </div>
-              <button className="bg-white text-[#C8102E] px-8 py-3 rounded font-bold hover:bg-gray-100 transition-colors duration-200">
-                Contact Sponsorship Manager
-              </button>
+              <a
+                href="mailto:info@atlantawild.com"
+                className="bg-white text-[#C8102E] px-8 py-3 rounded font-bold hover:bg-gray-100 transition-colors duration-200 hover:scale-105 inline-block"
+              >
+                Contact Us
+              </a>
             </div>
           </div>
         </div>

@@ -164,8 +164,6 @@ export function AboutLeaguePage() {
           </div>
         </div>
       </section>
-
-      <Footer />
     </div>
   );
 }

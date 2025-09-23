@@ -124,7 +124,7 @@ export function ContactForm({ onBack, hideBackButton = false }: ContactFormProps
                   </div>
                   <div>
                     <p className="font-medium text-white">Email</p>
-                    <p className="text-sm text-white/70">mia@atlantawild.com</p>
+                    <p className="text-sm text-white/70">info@atlantawild.com</p>
                   </div>
                 </div>
                 
@@ -158,7 +158,7 @@ export function ContactForm({ onBack, hideBackButton = false }: ContactFormProps
                   Send us a Message
                 </h3>
                 <p className="text-white/70">
-                  Fill out the form below and we'll get back to you soon
+                  Fill out the form below and we'll get back to you soon.
                 </p>
               </CardHeader>
               <CardContent>

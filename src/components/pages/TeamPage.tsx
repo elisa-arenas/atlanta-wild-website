@@ -8,93 +8,117 @@ export function TeamPage() {
       name: "Tom Sroka",
       position: "Strength Specialist",
       number: "23",
-      stats: "15.2 PPG, 8.1 RPG",
-      bio: "Highland Games Pro, Strongman, MAS Wrestler"
+      bio: "Highland Games Pro, Strongman, MAS Wrestler",
+      image: "/teamHeadshots/mix-headshot.jpg"
     },
     {
       id: 2,
-      name: "Alex Rodriguez",
-      position: "Guard",
-      number: "12",
-      stats: "12.8 PPG, 6.3 APG",
-      bio: "Lightning-fast playmaker and defensive specialist."
+      name: "Mixas Miller",
+      position: "Utility Player",
+      number: "96",
+      bio: "Lightning-fast playmaker and defensive specialist.",
+      image: "/teamHeadshots/mix-headshot.jpg"
     },
     {
       id: 3,
-      name: "Jordan Williams",
-      position: "Center",
-      number: "45",
-      stats: "18.5 PPG, 11.2 RPG",
-      bio: "Dominant force in the paint with incredible reach."
+      name: "Rafael Arreaza",
+      position: "Utility Player",
+      number: "20",
+      bio: "Dominant force in the paint with incredible reach.",
+      image: "/teamHeadshots/mix-headshot.jpg"
     },
     {
       id: 4,
-      name: "Taylor Brown",
-      position: "Guard",
-      number: "8",
-      stats: "11.7 PPG, 5.9 APG",
-      bio: "Clutch performer known for game-winning shots."
+      name: "Kawika Henderson",
+      position: "Strength Specialist",
+      number: "51",
+      bio: "Clutch performer known for game-winning shots.",
+      image: "/teamHeadshots/mix-headshot.jpg"
     },
     {
       id: 5,
-      name: "Cameron Davis",
-      position: "Forward",
-      number: "33",
-      stats: "14.3 PPG, 7.8 RPG",
-      bio: "Versatile player who can play multiple positions."
+      name: "Devon Braykovich",
+      position: "Utility Player",
+      number: "07",
+      bio: "Versatile player who can play multiple positions.",
+      image: "/teamHeadshots/mix-headshot.jpg"
     },
     {
       id: 6,
-      name: "Riley Thompson",
+      name: "Sidney Wilson",
       position: "Center",
       number: "21",
-      stats: "9.2 PPG, 9.7 RPG",
-      bio: "Defensive anchor with exceptional shot-blocking ability."
+      bio: "Defensive anchor with exceptional shot-blocking ability.",
+      image: "/teamHeadshots/mix-headshot.jpg"
+    },
+    {
+      id: 7,
+      name: "Matt Cable",
+      position: "Center",
+      number: "21",
+      bio: "Defensive anchor with exceptional shot-blocking ability.",
+      image: "/teamHeadshots/mix-headshot.jpg"
+    },
+    {
+      id: 8,
+      name: "Tyler Billington",
+      position: "Center",
+      number: "21",
+      bio: "Defensive anchor with exceptional shot-blocking ability.",
+      image: "/teamHeadshots/mix-headshot.jpg"
+    },
+    {
+      id: 9,
+      name: "Carrie Billington",
+      position: "Utility Player",
+      number: "16",
+      bio: "Defensive anchor with exceptional shot-blocking ability.",
+      image: "/teamHeadshots/mix-headshot.jpg"
     }
   ];
 
-  const coaches = [
+  const staff = [
     {
       id: 1,
-      name: "Coach Daniel Jackson",
+      name: "Daniel Jackson",
       role: "Co-Coach",
       experience: "Former utility player turned head coach.",
-      bio: "Coach bio here"
+      image: "/teamHeadshots/elisa-headshot.JPG"
     },
     {
       id: 2,
-      name: "Coach Robert Hibbard",
+      name: "Robert Hibbard",
       role: "Co-Coach",
       experience: "Former utility player turned head coach.",
-      bio: "Winner of UPOY and MVP, player of Atlanta Wild and Gainesville Wild"
+      image: "/teamHeadshots/elisa-headshot.JPG"
     },
     {
       id: 3,
-      name: "Co-owner Mia Austreng",
+      name: "Mia Austreng",
       role: "Co-owner",
       experience: "Specializes in player development.",
-      bio: "Owner of Compass North Nutrition, Community&Sales Manger of Hairstrong Band."
+      image: "/teamHeadshots/elisa-headshot.JPG"
     },
     {
       id: 4,
-      name: "Co-owner Jonathon Chen",
+      name: "Jonathon Chen",
       role: "Co-owner",
       experience: "6 years coaching experience",
-      bio: "Professional Ballroom and Latin Dancer and NASM Certified."
+      image: "/teamHeadshots/elisa-headshot.JPG"
     },
     {
       id: 5,
       name: "Kenniece Wilson-Smith",
       role: "Sponsorship Manager",
       experience: "12 years coaching experience",
-      bio: "CEO of TBC Media Group, Chief Brand Officer of Wilson Smith Brand, Founder of Get The Bag Girl."
+      image: "/teamHeadshots/elisa-headshot.JPG"
     },
     {
       id: 6,
       name: "Elisa Arenas",
       role: "Social Media Manager",
       experience: "Atlanta Wild Website Developer",
-      bio: "Software Engineer, Freelancer in Photo, Video, and Web Development"
+      image: "/teamHeadshots/elisa-headshot.JPG"
     }
   ];
 
@@ -106,7 +130,7 @@ export function TeamPage() {
       <div className="bg-gradient-to-r from-black to-[#C8102E] py-16 w-full">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center w-full">
           <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4">Meet the Team</h1>
-          <p className="text-lg sm:text-xl text-white/90">The champions who brought home the 2024 UGL Championship</p>
+          <p className="text-lg sm:text-xl text-white/90">The 2026 Atlanta Wild Team</p>
         </div>
       </div>
 
@@ -119,7 +143,7 @@ export function TeamPage() {
               <div key={player.id} className="bg-white/5 rounded-lg overflow-hidden hover:bg-white/10 transition-all duration-300 hover:scale-105">
                 <div className="aspect-square bg-gradient-to-br from-[#C8102E] to-black/50 flex items-center justify-center">
                   <ImageWithFallback
-                    src=""
+                    src={player.image} 
                     alt={player.name}
                     className="w-full h-full object-cover"
                     fallback={
@@ -135,7 +159,6 @@ export function TeamPage() {
                 <div className="p-6">
                   <h3 className="text-xl font-bold text-white mb-2">{player.name}</h3>
                   <p className="text-[#C8102E] font-semibold mb-2">{player.position} • #{player.number}</p>
-                  <p className="text-white/80 text-sm mb-3">{player.stats}</p>
                   <p className="text-white/70 text-sm">{player.bio}</p>
                 </div>
               </div>
@@ -149,12 +172,12 @@ export function TeamPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
           <h2 className="text-3xl font-bold text-white mb-12 text-center">Coaching & Staff</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {coaches.map((coach) => (
-              <div key={coach.id} className="bg-white/10 rounded-lg overflow-hidden hover:bg-white/20 transition-all duration-300">
+            {staff.map((person) => (
+              <div key={person.id} className="bg-white/10 rounded-lg overflow-hidden hover:bg-white/20 transition-all duration-300 hover:scale-105">
                 <div className="aspect-square bg-black/30 flex items-center justify-center">
                   <ImageWithFallback
-                    src=""
-                    alt={coach.name}
+                    src={person.image} 
+                    alt={person.name}
                     className="w-full h-full object-cover"
                     fallback={
                       <div className="w-full h-full flex items-center justify-center">
@@ -168,10 +191,9 @@ export function TeamPage() {
                   />
                 </div>
                 <div className="p-6">
-                  <h3 className="text-xl font-bold text-white mb-2">{coach.name}</h3>
-                  <p className="text-white font-semibold mb-2">{coach.role}</p>
-                  <p className="text-white/80 text-sm mb-3">{coach.experience}</p>
-                  <p className="text-white/70 text-sm">{coach.bio}</p>
+                  <h3 className="text-xl font-bold text-white mb-2">{person.name}</h3>
+                  <p className="text-white font-semibold mb-2">{person.role}</p>
+                  <p className="text-white/80 text-sm mb-3">{person.experience}</p>
                 </div>
               </div>
             ))}
