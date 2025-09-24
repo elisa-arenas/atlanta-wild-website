@@ -82,7 +82,7 @@ export function Partners() {
         <div className="text-center mt-16">
           <div className="inline-flex items-center space-x-2 px-6 py-3 rounded-full bg-white/10  hover:bg-white/10 transition-all duration-300 hover:scale-105">
             <span className="text-white/90">Interested in partnering with Atlanta Wild?</span>
-            <a href="mailto:partnerships@atlantawild.com" className="hover:underline text-white">
+            <a href="mailto:info@atlantawild.com" className="hover:underline text-white">
               Contact us
             </a>
           </div>

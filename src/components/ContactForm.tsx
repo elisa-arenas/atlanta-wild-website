@@ -16,14 +16,14 @@ interface ContactFormProps {
 interface FormData {
   fullName: string;
   email: string;
-  question: string;
+  message: string;
 }
 
 export function ContactForm({ onBack, hideBackButton = false }: ContactFormProps) {
   const [formData, setFormData] = useState<FormData>({
     fullName: "",
     email: "",
-    question: ""
+    message: ""
   });
   
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -39,7 +39,7 @@ export function ContactForm({ onBack, hideBackButton = false }: ContactFormProps
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     
-    if (!formData.fullName || !formData.email || !formData.question) {
+    if (!formData.fullName || !formData.email || !formData.message) {
       toast.error("Please fill in all fields");
       return;
     }
@@ -47,22 +47,26 @@ export function ContactForm({ onBack, hideBackButton = false }: ContactFormProps
     setIsSubmitting(true);
 
     try {
-      const templateParams = {
-        fullName: formData.fullName,
-        email: formData.email,
-        question: formData.question,
-      };
+      // const templateParams = {
+      //   fullName: formData.fullName,
+      //   message: formData.message,
+      //   email: formData.email
+      // };
 
       await emailjs.send(
-        "YOUR_SERVICE_ID",   // replace with your EmailJS Service ID
-        "YOUR_TEMPLATE_ID",  // replace with your EmailJS Template ID
-        templateParams,
-        "YOUR_PUBLIC_KEY"    // replace with your EmailJS Public Key
+        import.meta.env.VITE_EMAILJS_SERVICE_ID!,
+        import.meta.env.VITE_EMAILJS_TEMPLATE_ID!,
+        {
+          fullName: formData.fullName,
+          message: formData.message,
+          email: formData.email
+        },
+        import.meta.env.VITE_EMAILJS_PUBLIC_KEY!
       );
 
-      toast.success("Your message has been sent to Atlanta Wild management!");
+      toast.success("Your message has been sent to Atlanta Wild managemnt!");
       
-      setFormData({ fullName: "", email: "", question: "" });
+      setFormData({ fullName: "", email: "", message: "" });
       setTimeout(() => onBack(), 1500);
 
     } catch (error) {
@@ -190,12 +194,12 @@ export function ContactForm({ onBack, hideBackButton = false }: ContactFormProps
                   </div>
 
                   <div className="space-y-2">
-                    <Label htmlFor="question" className="text-white">Your Question or Message *</Label>
+                    <Label htmlFor="message" className="text-white">Your Question or Message *</Label>
                     <Textarea
-                      id="question"
+                      id="message"
                       placeholder="Tell us how we can help you..."
-                      value={formData.question}
-                      onChange={(e) => handleInputChange("question", e.target.value)}
+                      value={formData.message}
+                      onChange={(e) => handleInputChange("message", e.target.value)}
                       className="min-h-32 resize-none"
                       required
                     />

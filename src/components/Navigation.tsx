@@ -24,12 +24,14 @@ export function Navigation() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
         <div className="flex items-center justify-between h-20">
           {/* Logo/Brand */}
-          <div className="flex-shrink-0">
-            <Link to="/" className="text-white hover:text-[#C8102E] transition-colors duration-200">
-              <span className="text-2xl font-black tracking-wider" style={{ 
-                fontFamily: 'Impact, Arial Black, sans-serif',
-                textShadow: '2px 2px 4px rgba(200, 16, 46, 0.3)'
-              }}>ATLANTA WILD</span>
+          <div className="flex-shrink-0 flex items-center">
+            <Link to="/" className="block">
+              <img 
+                src="/icons/atl-wild-logo.png" 
+                alt="Atlanta Wild Logo" 
+                className="h-10 w-auto sm:h-12 md:h-14 lg:h-16" 
+                style={{ maxWidth: '150px', height: 'auto', objectFit: 'contain' }}
+              />
             </Link>
           </div>
 
