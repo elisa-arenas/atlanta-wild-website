@@ -66,14 +66,6 @@ export function TeamPage() {
       number: "21",
       bio: "Defensive anchor with exceptional shot-blocking ability.",
       image: "/teamHeadshots/mix-headshot.jpg"
-    },
-    {
-      id: 9,
-      name: "Carrie Billington",
-      position: "Utility Player",
-      number: "16",
-      bio: "Defensive anchor with exceptional shot-blocking ability.",
-      image: "/teamHeadshots/mix-headshot.jpg"
     }
   ];
 
@@ -138,7 +130,7 @@ export function TeamPage() {
       <div className="py-16 bg-black w-full">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
           <h2 className="text-3xl font-bold text-white mb-12 text-center">Our Athletes</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {players.map((player) => (
               <div key={player.id} className="bg-white/5 rounded-lg overflow-hidden hover:bg-white/10 transition-all duration-300 hover:scale-105">
                 <div className="aspect-square bg-gradient-to-br from-[#C8102E] to-black/50 flex items-center justify-center">

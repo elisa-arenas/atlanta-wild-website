@@ -8,12 +8,14 @@ export function Footer() {
           {/* Team Info */}
           <div className="space-y-6">
             <div>
-              <h3 className="text-2xl mb-2 text-white">
-                Atlanta <span style={{ color: '#C8102E' }}>Wild</span>
-              </h3>
-              <p className="text-white/80">
+              <img
+                src="/icons/atl-wild-logo.png"
+                alt="Atlanta Wild Logo"
+                className="h-16 sm:h-20 md:h-24 w-auto object-contain"
+              />
+              {/* <p className="text-white/80">
                 The Official Atlanta Team of the United Grid League
-              </p>
+              </p> */}
             </div>
             
             <div className="space-y-3 text-white/80">

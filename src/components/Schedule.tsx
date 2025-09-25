@@ -13,7 +13,7 @@ export function Schedule() {
       time: "7:00 PM EST",
       venue: "Atlanta Grid Arena",
       isHome: true,
-      logo: "🔥", // should be the florida sharks logo
+      logo: <img src="/icons/ugl-icon.webp" alt="Match Logo" className="h-8 w-8" />, 
       result: "W 85-72"
     },
     {
@@ -23,7 +23,7 @@ export function Schedule() {
       time: "8:00 PM EST",
       venue: "Steel Dome",
       isHome: false,
-      logo: "⚙️",
+      logo: <img src="/icons/ugl-icon.webp" alt="Match Logo" className="h-8 w-8" />, 
       result: "L 78-65"
     },
     {
@@ -33,7 +33,7 @@ export function Schedule() {
       time: "6:30 PM EST",
       venue: "Atlanta Grid Arena",
       isHome: true,
-      logo: "🏛️",
+      logo: <img src="/icons/ugl-icon.webp" alt="Match Logo" className="h-8 w-8" />, 
       result: "W 92-88"
     },
     {
@@ -43,7 +43,7 @@ export function Schedule() {
       time: "9:00 PM EST",
       venue: "Mile High Arena",
       isHome: false,
-      logo: "⛰️",
+      logo: <img src="/icons/ugl-icon.webp" alt="Match Logo" className="h-8 w-8" />, 
       result: "L 68-75"
     },
     {
@@ -53,7 +53,7 @@ export function Schedule() {
       time: "10:00 PM EST",
       venue: "Neon Stadium",
       isHome: false,
-      logo: "💎",
+      logo: <img src="/icons/ugl-icon.webp" alt="Match Logo" className="h-8 w-8" />, 
       result: "W 83-79"
     }
   ];
@@ -66,7 +66,7 @@ export function Schedule() {
       time: "7:00 PM EST",
       venue: "Atlanta Grid Arena",
       isHome: true,
-      logo: "⚡"
+      logo: <img src="/icons/ugl-icon.webp" alt="Match Logo" className="h-8 w-8" />
     },
     {
       id: 7,
@@ -75,7 +75,7 @@ export function Schedule() {
       time: "8:30 PM EST",
       venue: "Forge Stadium",
       isHome: false,
-      logo: "🔥"
+      logo: <img src="/icons/ugl-icon.webp" alt="Match Logo" className="h-8 w-8" />
     },
     {
       id: 8,
@@ -84,7 +84,7 @@ export function Schedule() {
       time: "6:00 PM EST", 
       venue: "Atlanta Grid Arena",
       isHome: true,
-      logo: "⛈️"
+      logo: <img src="/icons/ugl-icon.webp" alt="Match Logo" className="h-8 w-8" />
     },
     {
       id: 9,
@@ -93,7 +93,7 @@ export function Schedule() {
       time: "7:30 PM EST",
       venue: "Thunder Dome",
       isHome: false,
-      logo: "⚡"
+      logo: <img src="/icons/ugl-icon.webp" alt="Match Logo" className="h-8 w-8" />
     },
     {
       id: 10,
@@ -102,7 +102,7 @@ export function Schedule() {
       time: "10:00 PM EST",
       venue: "Atlanta Grid Arena",
       isHome: true,
-      logo: "🌊"
+      logo: <img src="/icons/ugl-icon.webp" alt="Match Logo" className="h-8 w-8" />
     }
   ];
 
@@ -177,17 +177,6 @@ export function Schedule() {
                       <h3 className="text-lg font-bold uppercase tracking-wide text-black">
                         vs {match.opponent}
                       </h3>
-                      <div className="flex items-center space-x-2">
-                        <div 
-                          className={`px-2 py-1 rounded text-xs font-bold uppercase ${
-                            match.isHome 
-                              ? 'bg-green-600 text-white' 
-                              : 'bg-orange-600 text-white'
-                          }`}
-                        >
-                          {match.isHome ? 'HOME' : 'AWAY'}
-                        </div>
-                      </div>
                     </div>
                   </div>
                 </div>

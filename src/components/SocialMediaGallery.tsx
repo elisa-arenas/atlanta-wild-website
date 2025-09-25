@@ -6,28 +6,28 @@ const socialPosts = [
     id: 1,
     url: "https://www.instagram.com/unitedgridleague/reel/DCR5pB6uLuY/",
     platform: "instagram",
-    caption: "Championship celebration! 🏆 #AtlantaWild #Champions",
+    caption: "Racing against the Super Team in Vegas 🏆 #AtlantaWild",
     thumbnail: "/instagramThumbnails/instaReel1Thumbail.png"
   },
   {
     id: 2,
     url: "https://www.instagram.com/atlantawild/reel/DAs-QtvOTO6/",
     platform: "instagram",
-    caption: "Game day ready 💪❤️ #WildSide #GameTime",
+    caption: "Advice from Atlanta Wild veteran 💪 gridleague",
     thumbnail: "/instagramThumbnails/reel2.png"
   },
   {
     id: 3,
     url: "https://www.instagram.com/unitedgridleague/reel/DOZZZtIEpTH/",
     platform: "instagram",
-    caption: "Team bonding session 🤝❤️ #TeamWork #WildFamily",
+    caption: "Sidney smashes this shoulder to overhead mirror segment 🤝 #competition",
     thumbnail: "/instagramThumbnails/reel3.png"
   },
   {
     id: 4,
     url: "https://www.instagram.com/unitedgridleague/reel/DOWN9s6jVNC/",
     platform: "instagram",
-    caption: "Training hard for the next game 🔥🎯 #NeverSettle",
+    caption: "Before this season, my max was 6 unbroken... 🎯 #NeverSettle",
     thumbnail: "/instagramThumbnails/reel4.png"
   }
 ];
