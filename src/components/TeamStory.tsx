@@ -13,31 +13,25 @@ export function TeamStory() {
             </h2>
             
             <p className="text-lg text-white/90 leading-relaxed">
-              Founded in 1995, the Atlanta Wild began as more than just a sports team – 
-              we started as a dream to bring championship-level athletics to our city. 
-              Through decades of dedication, strategic gameplay, and unwavering community 
-              support, we've evolved into the powerhouse organization you see today.
+              paragraph here. paragraph here. paragraph here. paragraph here.
+              paragraph here. paragraph here. paragraph here. paragraph here.
             </p>
             
             <p className="text-lg text-white/90 leading-relaxed">
-              Our journey hasn't been without challenges, but each obstacle has only 
-              strengthened our resolve. From our first championship in 2003 to our recent 
-              title defense, every victory belongs to our incredible fans, dedicated staff, 
-              and the exceptional athletes who wear our colors with pride.
+              paragraph here. paragraph here. paragraph here. paragraph here.
+              paragraph here. paragraph here. paragraph here. paragraph here.
             </p>
             
-            {/* Pull Quote */}
             <div 
               className="relative p-8 rounded-xl text-white my-12"
               style={{ backgroundColor: '#C8102E' }}
             >
               <Quote className="absolute top-4 left-4 w-8 h-8 text-white/50" />
               <blockquote className="text-2xl md:text-3xl font-medium leading-relaxed pl-12">
-                "We don't just play to win games. We play to inspire a city, 
-                to show what's possible when talent meets determination."
+                "Inspirational Quote Here..."
               </blockquote>
               <cite className="block mt-6 text-lg text-white/80">
-                — Marcus Johnson, Team Captain
+                — Tom Sroka, Team Captain
               </cite>
             </div>
           </div>

@@ -79,7 +79,7 @@ export function Partners() {
 				<div className="text-center mt-16">
 					<a
 						href="mailto:info@atlantawild.com"
-						className="inline-block px-8 py-4 text-lg font-bold text-black bg-white/80 backdrop-blur-sm border-gray-300 rounded-md shadow-md hover:bg-white hover:text-black hover:shadow-lg transition-all duration-300 hover:scale-105"
+						className="inline-block px-8 py-4 text-lg font-bold text-black bg-white border-2 border-transparent rounded-md shadow-md hover:bg-[#C8102E] hover:text-white hover:border-[#C8102E] transition-all duration-300 hover:scale-105"
 					>
 						Interested in partnering with Atlanta Wild? Contact Us
 					</a>

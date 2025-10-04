@@ -5,7 +5,7 @@ import { ImageWithFallback } from "./figma/ImageWithFallback";
 const playersData = [
 	{
 		id: 1,
-		name: "Tom Sokra",
+		name: "Tom Sroka",
 		role: "Strength Specialist",
 		image: "/teamImages/photo1.JPG",
 		stats: "3,240 passing yards • 28 TDs • 92.5% completion rate",
@@ -21,7 +21,7 @@ const playersData = [
 	},
 	{
 		id: 3,
-		name: "James Washington",
+		name: "Sidney Wilson",
 		role: "Utility Player",
 		image: "/teamImages/photo3.JPG",
 		stats: "12.5 sacks • 45 tackles • 3 forced fumbles",
@@ -29,8 +29,8 @@ const playersData = [
 	},
 	{
 		id: 4,
-		name: "Sidney Wilson",
-		role: "Utility Player",
+		name: "TBA",
+		role: "Player",
 		image: "/teamImages/photo1.JPG",
 		stats: "89 receptions • 1,340 yards • 11 TDs",
 		experience: "4 years pro",
@@ -72,11 +72,11 @@ export function PlayerProfiles() {
 									{player.role}
 								</p>
 
-								{/* Hover details */}
+								{/* Hover details
 								<div className="opacity-0 group-hover:opacity-100 transition-opacity duration-300 absolute inset-x-6 -top-16 bg-white p-4 rounded-lg shadow-lg border-2 border-red-100">
 									<p className="text-sm text-gray-600 mb-2">{player.stats}</p>
 									<p className="text-xs text-gray-500">{player.experience}</p>
-								</div>
+								</div> */}
 							</CardContent>
 						</Card>
 					))}

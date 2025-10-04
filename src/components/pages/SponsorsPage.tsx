@@ -11,18 +11,18 @@ export function SponsorsPage() {
     },
     {
       id: 2,
-      name: "Adidas",
+      name: "TBA",
       category: "Official Equipment Partner",
       description: "Supporting our champions with premium energy drinks and sports nutrition.",
-      website: "https://atlantaenergy.com"
+      website: "https://enduraphin.com"
     },
-    {
-      id: 3,
-      name: "Drink Noca",
-      category: "Official Beverage Partner",
-      description: "Supporting Atlanta's finest athletes with non-carbonated boozy beverages.",
-      website: "https://metroatlantabank.com"
-    }
+    // {
+    //   id: 3,
+    //   name: "TBA",
+    //   category: "Official Beverage Partner",
+    //   description: "Supporting Atlanta's finest athletes with non-carbonated boozy beverages.",
+    //   website: "https://enduraphin.com"
+    // }
   ];
 
   return (
@@ -40,7 +40,7 @@ export function SponsorsPage() {
       {/* Sponsors Grid */}
       <div className="py-16 bg-black">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8 mb-12">
             {sponsors.map((sponsor) => (
               <div key={sponsor.id} className="bg-white/5 rounded-lg overflow-hidden hover:bg-white/10 transition-all duration-300 hover:scale-105">
                 {/* Logo placeholder */}

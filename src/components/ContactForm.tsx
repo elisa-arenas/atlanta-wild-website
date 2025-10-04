@@ -141,7 +141,7 @@ export function ContactForm({ onBack, hideBackButton = false }: ContactFormProps
                   </div>
                   <div>
                     <p className="font-medium text-white">Phone Number</p>
-                    <p className="text-sm text-white/70">954-111-WILD</p>
+                    <p className="text-sm text-white/70">TBA</p>
                   </div>
                 </div>
 

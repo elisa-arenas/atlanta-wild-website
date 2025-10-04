@@ -7,66 +7,66 @@ export function TeamPage() {
       id: 1,
       name: "Tom Sroka",
       position: "Strength Specialist",
-      number: "23",
+      number: "03",
       bio: "Highland Games Pro, Strongman, MAS Wrestler",
-      image: "/teamHeadshots/mix-headshot.jpg"
+      image: "/teamHeadshots/tom-headshot.jpg"
     },
     {
       id: 2,
       name: "Mixas Miller",
       position: "Utility Player",
       number: "96",
-      bio: "Lightning-fast playmaker and defensive specialist.",
+      bio: "United Grid League Athlete",
       image: "/teamHeadshots/mix-headshot.jpg"
     },
     {
       id: 3,
-      name: "Rafael Arreaza",
-      position: "Utility Player",
+      name: "TBA",
+      position: "Bodyweight Specialist",
       number: "20",
-      bio: "Dominant force in the paint with incredible reach.",
-      image: "/teamHeadshots/mix-headshot.jpg"
+      bio: "United Grid League Athlete",
+      image: "/icons/atl-wild-logo.png"
     },
     {
       id: 4,
       name: "Kawika Henderson",
       position: "Strength Specialist",
       number: "51",
-      bio: "Clutch performer known for game-winning shots.",
-      image: "/teamHeadshots/mix-headshot.jpg"
+      bio: "United Grid League Athlete",
+      image: "/icons/atl-wild-logo.png"
     },
-    {
-      id: 5,
-      name: "Devon Braykovich",
-      position: "Utility Player",
-      number: "07",
-      bio: "Versatile player who can play multiple positions.",
-      image: "/teamHeadshots/mix-headshot.jpg"
-    },
-    {
-      id: 6,
-      name: "Sidney Wilson",
-      position: "Center",
-      number: "21",
-      bio: "Defensive anchor with exceptional shot-blocking ability.",
-      image: "/teamHeadshots/mix-headshot.jpg"
-    },
-    {
-      id: 7,
-      name: "Matt Cable",
-      position: "Center",
-      number: "21",
-      bio: "Defensive anchor with exceptional shot-blocking ability.",
-      image: "/teamHeadshots/mix-headshot.jpg"
-    },
-    {
-      id: 8,
-      name: "Tyler Billington",
-      position: "Center",
-      number: "21",
-      bio: "Defensive anchor with exceptional shot-blocking ability.",
-      image: "/teamHeadshots/mix-headshot.jpg"
-    }
+    // {
+    //   id: 5,
+    //   name: "Devon Braykovich",
+    //   position: "Player",
+    //   number: "07",
+    //   bio: "United Grid League Athlete",
+    //   image: "/icons/atl-wild-logo.png"
+    // },
+    // {
+    //   id: 6,
+    //   name: "Sidney Wilson",
+    //   position: "Player",
+    //   number: "21",
+    //   bio: "United Grid League Athlete",
+    //   image: "/icons/atl-wild-logo.png"
+    // },
+    // {
+    //   id: 7,
+    //   name: "Matt Cable",
+    //   position: "Player",
+    //   number: "21",
+    //   bio: "United Grid League Athlete",
+    //   image: "/icons/atl-wild-logo.png"
+    // },
+    // {
+    //   id: 8,
+    //   name: "Tyler Billington",
+    //   position: "Player",
+    //   number: "21",
+    //   bio: "United Grid League Athlete",
+    //   image: "/icons/atl-wild-logo.png"
+    // }
   ];
 
   const staff = [
@@ -75,35 +75,35 @@ export function TeamPage() {
       name: "Daniel Jackson",
       role: "Co-Coach",
       experience: "Former utility player turned head coach.",
-      image: "/teamHeadshots/elisa-headshot.JPG"
+      image: "/icons/atl-wild-logo.png"
     },
     {
       id: 2,
       name: "Robert Hibbard",
       role: "Co-Coach",
       experience: "Former utility player turned head coach.",
-      image: "/teamHeadshots/elisa-headshot.JPG"
+      image: "/icons/atl-wild-logo.png"
     },
     {
       id: 3,
       name: "Mia Austreng",
       role: "Co-owner",
       experience: "Specializes in player development.",
-      image: "/teamHeadshots/elisa-headshot.JPG"
+      image: "/icons/atl-wild-logo.png"
     },
     {
       id: 4,
       name: "Jonathon Chen",
       role: "Co-owner",
       experience: "6 years coaching experience",
-      image: "/teamHeadshots/elisa-headshot.JPG"
+      image: "/icons/atl-wild-logo.png"
     },
     {
       id: 5,
       name: "Kenniece Wilson-Smith",
       role: "Sponsorship Manager",
       experience: "12 years coaching experience",
-      image: "/teamHeadshots/elisa-headshot.JPG"
+      image: "/icons/atl-wild-logo.png"
     },
     {
       id: 6,

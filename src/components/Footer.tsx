@@ -21,11 +21,11 @@ export function Footer() {
             <div className="space-y-3 text-white/80">
               <div className="flex items-center space-x-3">
                 <MapPin className="w-4 h-4" style={{ color: '#C8102E' }} />
-                <span>1500 Wild Stadium Way, Atlanta, GA 30309</span>
+                <span>TBA</span>
               </div>
               <div className="flex items-center space-x-3">
                 <Phone className="w-4 h-4" style={{ color: '#C8102E' }} />
-                <span>(404) 555-WILD</span>
+                <span>TBA</span>
               </div>
               <div className="flex items-center space-x-3">
                 <Mail className="w-4 h-4" style={{ color: '#C8102E' }} />

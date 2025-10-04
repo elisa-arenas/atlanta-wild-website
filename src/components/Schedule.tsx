@@ -9,80 +9,61 @@ export function Schedule() {
     {
       id: 1,
       opponent: "Florida Sharks",
-      date: "May 10, 2025",
-      time: "7:00 PM EST",
-      venue: "Atlanta Grid Arena",
+      date: "May 24, 2025",
+      time: "2:00 PM EST",
+      venue: "Miami Dade County Fair & Exposition",
       isHome: true,
       logo: <img src="/icons/ugl-icon.webp" alt="Match Logo" className="h-8 w-8" />, 
-      result: "W 85-72"
+      result: "L 21-12"
     },
     {
       id: 2,
       opponent: "Fort Lauderdale Lions",
-      date: "June 16, 2025",
-      time: "8:00 PM EST",
-      venue: "Steel Dome",
+      date: "June 14, 2025",
+      time: "2:00 PM EST",
+      venue: "Valor Fitness Headquarters",
       isHome: false,
       logo: <img src="/icons/ugl-icon.webp" alt="Match Logo" className="h-8 w-8" />, 
-      result: "L 78-65"
+      result: "L 19-6"
     },
     {
       id: 3,
       opponent: "South Beach Palms",
-      date: "July 16, 2025",
-      time: "6:30 PM EST",
-      venue: "Atlanta Grid Arena",
+      date: "July 13, 2025",
+      time: "2:00 PM EST",
+      venue: "Mesquite Convention Center",
       isHome: true,
       logo: <img src="/icons/ugl-icon.webp" alt="Match Logo" className="h-8 w-8" />, 
-      result: "W 92-88"
-    },
-    {
-      id: 4,
-      opponent: "Denver Altitude",
-      date: "December 8, 2024",
-      time: "9:00 PM EST",
-      venue: "Mile High Arena",
-      isHome: false,
-      logo: <img src="/icons/ugl-icon.webp" alt="Match Logo" className="h-8 w-8" />, 
-      result: "L 68-75"
-    },
-    {
-      id: 5,
-      opponent: "Las Vegas Neon",
-      date: "December 1, 2024",
-      time: "10:00 PM EST",
-      venue: "Neon Stadium",
-      isHome: false,
-      logo: <img src="/icons/ugl-icon.webp" alt="Match Logo" className="h-8 w-8" />, 
-      result: "W 83-79"
+      result: "W 17-15",
+      url: "https://www.youtube.com/live/-MRqU8AeKdk"
     }
   ];
 
   const futureMatches = [
     {
       id: 6,
-      opponent: "Phoenix Thunder",
-      date: "February 15, 2025",
-      time: "7:00 PM EST",
-      venue: "Atlanta Grid Arena",
+      opponent: "Florida Sharks",
+      date: "May 2026",
+      time: "TBA",
+      venue: "TBA",
       isHome: true,
       logo: <img src="/icons/ugl-icon.webp" alt="Match Logo" className="h-8 w-8" />
     },
     {
       id: 7,
-      opponent: "Dallas Forge",
-      date: "February 28, 2025", 
-      time: "8:30 PM EST",
-      venue: "Forge Stadium",
+      opponent: "South Beach Palms",
+      date: "May 2026", 
+      time: "TBA",
+      venue: "TBA",
       isHome: false,
       logo: <img src="/icons/ugl-icon.webp" alt="Match Logo" className="h-8 w-8" />
     },
     {
       id: 8,
-      opponent: "Seattle Storm",
-      date: "March 8, 2025",
-      time: "6:00 PM EST", 
-      venue: "Atlanta Grid Arena",
+      opponent: "Las Vegas Venom",
+      date: "May 2026",
+      time: "TBA", 
+      venue: "TBA",
       isHome: true,
       logo: <img src="/icons/ugl-icon.webp" alt="Match Logo" className="h-8 w-8" />
     },
@@ -132,7 +113,7 @@ export function Schedule() {
                 
                 <div className="space-y-2">
                   <div className="text-2xl md:text-3xl lg:text-4xl font-black" style={{ color: '#C8102E' }}>
-                    15
+                    5
                   </div>
                   <p className="text-xs md:text-sm font-bold uppercase tracking-wide text-white/80">Games Remaining</p>
                 </div>

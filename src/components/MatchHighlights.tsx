@@ -25,7 +25,7 @@ const matchData = [
     id: 3,
     date: "May 27, 2025",
     opponent: "Florida Sharks",
-    result: "L 100-63",
+    result: "L 21-12",
     videoURL: "https://youtu.be/jr4m7vsbNVc",
     highlight: "Championship Rematch"
   }
